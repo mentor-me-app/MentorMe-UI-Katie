@@ -130,3 +130,8 @@
 
 })(jQuery);
 
+// Requirement: EventListener
+window.addEventListener('load', () => {
+    console.log("All resources loaded bro");
+  });
+
