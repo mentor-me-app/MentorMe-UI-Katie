@@ -1336,6 +1336,7 @@ h6 {
 }
 
 @media (min-width: 992px) {
+
   #intro .intro-info {
     padding-top: 80px;
   }
@@ -1374,6 +1375,15 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
+   #header .logo img {
+    width: 80%;
+  }
+
+  #team img {
+    height: 50%;
+  }
+
   .back-to-top {
     bottom: 15px;
   }
