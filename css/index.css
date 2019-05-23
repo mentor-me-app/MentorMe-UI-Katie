@@ -59,7 +59,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
-    font-family: 'Monteserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -89,56 +89,132 @@ button {
     border-radius: 12px;
 }
 
-.boxes {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
+/* Section with background
+--------------------------------*/
+
+.section-bg {
+  /* background: #f5f8fd; */
+  background: white;
 }
 
-.box1 {
-    background-color: teal;
+
+/* Sections Header
+--------------------------------*/
+
+.section-header h3 {
+  font-size: 36px;
+  color: #5574F7;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
 }
 
-.box2 {
-    background-color: gold;
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #535074;
+  width: 50%;
 }
 
-.box3 {
-    background-color: cadetblue;
+/* Team Section
+--------------------------------*/
+
+#team {
+  padding: 15px 0;
 }
 
-.box4 {
-    background-color: coral;
+#team img {
+  height: 300px;
 }
 
-.box5 {
-    background-color: crimson;
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
-.box6 {
-    background-color: forestgreen;
+#team .member .member-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+  padding: 15px 0;
+  background: rgba(29, 28, 41, 0.6);
 }
 
-.box7 {
-    background-color: darkorchid;
+#team .member .member-info-content {
+  transition: margin 0.2s;
+  height: 40px;
+  transition: height 0.4s;
 }
 
-.box8 {
-    background-color: hotpink;
+#team .member:hover .member-info {
+  transition: 0.4s;
 }
 
-.box9 {
-    background-color: indigo;
+#team .member:hover .member-info-content {
+  height: 80px;
 }
 
-.box10 {
-    background-color: dodgerblue;
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
 }
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+
+#team .member .social a:hover {
+  color: #1bb1dc;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+#team .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .container {
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -148,7 +224,7 @@ button {
 }
 
 .header-img {
-	width: 800px;
+	width: 100%;
 }
 
 .text-img {
@@ -159,7 +235,6 @@ button {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
-    border-bottom: 1px dashed black;
 }
 
 .header-content .text-container {
@@ -173,11 +248,10 @@ button {
     justify-content: space-evenly;
     margin-bottom: 20px;
     padding-top: 30px;
-    border-bottom: 1px dashed black; 
 }
 
 .top-content .text-container {
-    width: 48%;
+    width: 98%;
     padding: 0 1%;
     padding-bottom: 20px; 
 }
@@ -213,30 +287,36 @@ button {
     justify-content: space-evenly;
 }
 
-.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
+    /* justify-content: space-around; */
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
     padding-top: 4%;
+    width: 100%;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.bottom-content .logo {
+    padding: 0;
 }
+
+.bottom-content h2 {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.bottom-content p {
+    padding-right: 65px;
+    padding-top: 15px;
+}
+
 
 /* Stretch: Design new page - Contact Form CSS */
 
