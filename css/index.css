@@ -55,7 +55,16 @@ nav {
 }
 
 nav a { 
-   text-decoration: none;
+  display: block;
+  position: relative;
+  color: #5574F7;
+  padding: 10px 15px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 /* Mobile Navigation
@@ -307,13 +316,6 @@ nav a {
   width: 50%;
 }
 
-/* Section with background
---------------------------------*/
-
-.section-bg {
-  background: #f5f8fd;
-}
-
 
 /* Sections Header
 --------------------------------*/
@@ -334,6 +336,72 @@ nav a {
   padding-bottom: 60px;
   color: #535074;
   width: 50%;
+}
+
+/* Icons */
+
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 48px;
+}
+
+#services .boxes > {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#services .box1, .box2, .box3, .box4, .box5, .box6 {
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+}
+
+#services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#services .title a {
+  color: #111;
+}
+
+#services .box:hover .title a {
+  color: #1bb1dc;
+}
+
+#services .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 /* Team Content */
@@ -445,6 +513,61 @@ nav a {
     padding-bottom: 20px; 
 }
 
+/* FAQ */
+
+.accordion {
+  color: #444;
+  background: #fff;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  transition: 0.4s;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
 
 /* Bottom Content */
 
@@ -516,7 +639,7 @@ input[type=submit]:hover {
 
 footer {
     width: 100%;
-    background: black;
+    background: #555186;
 }
 
 footer nav {
