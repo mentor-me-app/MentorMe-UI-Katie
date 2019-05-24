@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Mentor Me</title>
+  <title>Mentor Me | Find your online mentor, for free.</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
 
   <!-- Favicons -->
   <link href="img/favicon.ico" rel="icon">
@@ -14,26 +12,26 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/index.css">
+  <!-- CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
+  <!-- Main Stylesheet File -->
+  <link href="css/index.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
+   <div class="container">
         <header>
             <img class="logo" src="img/logo.png" alt="Mentor Me">
         <nav>
               <a href="index.html">Home</a>
                 <a href="team.html">Team</a>
-                <a href="#">How We Help You</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html#services"">How We Help You</a>
+                <a href="index.html#faq"">FAQ</a>
+                <a href="index.html#footer">Contact</a>
             </nav>
         </header>
-         <main id="main">
 
 <!-- Intro -->
       <section class="intro">
@@ -56,19 +54,16 @@
                     <h3>The Team</h3>
                     <p>The people who make it happen.</p>
                 </header>
-                <div class="row">
+          <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <img src="img/aruna.png" class="img-fluid" alt="">
+              <img src="img/aruna.png" class="img-fluid" alt="Aruna">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Aruna</h4>
                   <span>Front End Developer</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <ion-icon src="img/github.svg"></ion-icon>
                   </div>
                 </div>
               </div>
@@ -198,12 +193,19 @@
         
         <footer>
             <nav>
-             <a href="index.html">Home</a>
+              <a href="index.html">Home</a>
                 <a href="team.html">Team</a>
-                <a href="#">How We Help You</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html#services">How We Help You</a>
+                <a href="index.html#footer">Contact</a>
             </nav>
-        </footer>
-    </div><!-- container -->        
+   </footer><!-- #footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/faq/faq.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
 </html>
