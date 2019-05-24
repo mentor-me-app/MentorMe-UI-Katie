@@ -338,16 +338,18 @@ nav a {
 
 #team .member .social a {
   transition: none;
-  color: #fff;
+   font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #ccc;
 }
 
 #team .member .social a:hover {
  color: #fff;
 }
 
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
+#team .social-img {
+  width: 30px;
 }
 
 #team .row {
@@ -391,7 +393,6 @@ nav a {
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #ccc;
 }
@@ -608,6 +609,18 @@ nav a {
 
 #services {
   width: 80%;
+}
+
+#team {
+  width: 80%;
+}
+
+#team img {
+  width: 100%;
+}
+
+#team .row  {
+  display: block;
 }
 
 #services .box1, .box2, .box3, .box4, .box5, .box6  {
