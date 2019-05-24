@@ -51,7 +51,6 @@ nav {
     justify-content: space-around;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 60px;
 }
 
 nav a { 
@@ -67,110 +66,6 @@ nav a {
   text-decoration: none;
 }
 
-/* Mobile Navigation
-
-.mobile-nav {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow-y: auto;
-  left: -260px;
-  width: 260px;
-  padding-top: 18px;
-  background: rgba(40, 38, 70, 0.8);
-  transition: 0.4s;
-}
-
-.mobile-nav * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.mobile-nav a {
-  display: block;
-  position: relative;
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: 500;
-}
-
-.mobile-nav a:hover,
-.mobile-nav .active > a,
-.mobile-nav li:hover > a {
-  color: #8dc2fa;
-  text-decoration: none;
-}
-
-.mobile-nav .drop-down > a:after {
-  content: "\f078";
-  font-family: FontAwesome;
-  padding-left: 10px;
-  position: absolute;
-  right: 15px;
-}
-
-.mobile-nav .active.drop-down > a:after {
-  content: "\f077";
-}
-
-.mobile-nav .drop-down > a {
-  padding-right: 35px;
-}
-
-.mobile-nav .drop-down ul {
-  display: none;
-  overflow: hidden;
-}
-
-.mobile-nav .drop-down li {
-  padding-left: 20px;
-}
-
-.mobile-nav-toggle {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 9998;
-  border: 0;
-  background: none;
-  font-size: 24px;
-  transition: all 0.4s;
-  outline: none !important;
-  line-height: 1;
-  cursor: pointer;
-  text-align: right;
-}
-
-.mobile-nav-toggle i {
-  margin: 18px 18px 0 0;
-  color: #065e77;
-}
-
-.mobile-nav-overly {
-  width: 100%;
-  height: 100%;
-  z-index: 9997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: rgba(40, 38, 70, 0.8);
-  overflow: hidden;
-  display: none;
-}
-
-.mobile-nav-active {
-  overflow: hidden;
-}
-
-.mobile-nav-active .mobile-nav {
-  left: 0;
-}
-
-.mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
-} */
 
 /*--------------------------------------------------------------
 # Header
@@ -519,20 +414,16 @@ nav a {
   transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #ccc;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
 }
-
-
 
 /* Bottom Content */
 
@@ -544,6 +435,7 @@ nav a {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    border-bottom: 1px solid #ccc; 
 }
 
 .bottom-content .text-container {
@@ -566,59 +458,11 @@ nav a {
     padding-top: 15px;
 }
 
-
-/* Stretch: Design new page - Contact Form CSS */
-
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px;   
-  border: 1px solid #ccc; 
-  border-radius: 4px;
-  box-sizing: border-box; 
-  margin-top: 6px;
-  margin-bottom: 16px; 
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: red;
-  font-size: 15px;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-
-.contact-container {
-  border-radius: 5px;
-  background-color: white;
-  padding: 20px 50px 20px 50px;
-}
-
-
-footer {
-    width: 100%;
-    background: #555186;
-}
-
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
-}
-
-footer nav a {
-    color: white;
-    text-decoration: none;
+.copyright {
+	margin-top: 30px;
+	text-align: center;
+  padding-bottom: 100px;
+  color: grey;
 }
 
 /*--------------------------------------------------------------
@@ -647,10 +491,6 @@ footer nav a {
   #intro .intro-info {
     padding-top: 80px;
   }
-
-  #testimonials .testimonial-item p {
-    width: 80%;
-  }
 }
 
 @media (max-width: 991px) {
@@ -667,37 +507,36 @@ footer nav a {
     font-size: 28px;
     padding: 8px 0;
   }
-
-  #why-us .why-us-content {
-    padding-top: 30px;
-  }
-
-  #pricing {
-    padding-bottom: 30px;
-  }
-
-  #pricing .card {
-    margin-bottom: 50px;
-  }
 }
 
-@media (max-width: 768px) {
+/* Tablet */
+@media (max-width: 800px) {
+    .container {
+        width: 680px;
+    }
 
-   #header .logo img {
+    .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+    nav {
+    display: flex;
+    order: 2;
+    flex-direction: row;
+    }
+
+    .nav a {
+      color: #C0C0C0;
+      font-size: 20px; 
+      width: 50%;
+      text-decoration: none;
+    }
+
+  #header .logo img {
     width: 80%;
   }
 
-  /* #team img {
-    height: 50%;
-  } */
-
-  .back-to-top {
-    bottom: 15px;
-  }
-
-}
-
-@media (max-width: 767px) {
   #intro {
     height: auto;
     padding: 80px 0 60px 0;
@@ -724,10 +563,65 @@ footer nav a {
   .section-header p {
     width: 100%;
   }
+
+  /* Mobile */
+@media (max-width: 500px) {
+  
+  .container {
+        width: 90%;
+        margin: 0;
+    }
+
+    nav {
+    display: flex;
+    width: 100%;
+    height: 370px;
+    order: 2;
+    flex-direction: column;
+    }
+
+    nav a {
+    display: flex;
+    flex-direction: column;
+      justify-content: center;
+      border-bottom: 1px solid grey; 
 }
 
-@media (max-width: 574px) {
-  #footer .footer-top .social-links a {
-    margin-bottom: 25px;
-  }
+
+.intro-container h2 {
+	font-size: 32px;
+}
+
+.intro img {
+  display: none;
+}
+
+    .top-content {
+
+    display: inline-block;
+    padding: 15px 10px 15px 10px;
+}
+
+.boxes {
+  display: block;
+}
+
+#services {
+  width: 80%;
+}
+
+#services .box1, .box2, .box3, .box4, .box5, .box6  {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+
+    .bottom-content {
+
+    display: inline-block;
+    padding: 15px 10px 15px 10px;
+}
+.bottom-content .logo {
+  width: 95%;
+}
+}
 }
